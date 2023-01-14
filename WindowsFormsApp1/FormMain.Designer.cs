@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
             this.cboMake.Location = new System.Drawing.Point(89, 16);
             this.cboMake.Name = "cboMake";
             this.cboMake.Size = new System.Drawing.Size(305, 21);
-            this.cboMake.TabIndex = 3;
+            this.cboMake.TabIndex = 1;
             this.cboMake.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
@@ -65,8 +65,8 @@ namespace WindowsFormsApp1
             "Model2"});
             this.lstModels.Location = new System.Drawing.Point(89, 43);
             this.lstModels.Name = "lstModels";
-            this.lstModels.Size = new System.Drawing.Size(305, 225);
-            this.lstModels.TabIndex = 5;
+            this.lstModels.Size = new System.Drawing.Size(305, 251);
+            this.lstModels.TabIndex = 2;
             // 
             // label2
             // 
@@ -77,20 +77,21 @@ namespace WindowsFormsApp1
             this.label2.TabIndex = 6;
             this.label2.Text = "Models:";
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 279);
+            this.ClientSize = new System.Drawing.Size(442, 307);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lstModels);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboMake);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Test Public API";
+            this.Text = "Public API Demo";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
